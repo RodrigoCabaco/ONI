@@ -13,10 +13,11 @@ def part_1():
 	print(f)
 	
 def part_2():
-	N = 4
-	M = 5
+	P = input()
+	N = int(P.split(' ')[0])
+	M = int(P.split(' ')[1])
+	A = list(map(int,input().split(' ')))
 	f = 0
-	A = [1,2,1,3]
 	for x in range(M):
 		u = min(A)
 		A[A.index(u)] = u+1
