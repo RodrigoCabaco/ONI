@@ -7,11 +7,18 @@ def part_1():
 	B = list(map(int,input().split (' ')))
 	#Output = multiplos de 3 (1,5)(1,5)(4,5)(6,6)(2,1)
 	K = 0
-	for i in A:
-		for l in B:
-			if (i+l)%X==0:
-				K+=1
-	print(K)
+	_A = []
+	_B = []
+	for f in A:
+		_A.append(f%X)
+	for g in B:
+		_B.append(f%X)
+
+	for l in _A:
+		for j in _B:
+			if j==l:
+				K+=(X/2)
+	print(int(K))
 
 t = input()
 if t=="1":part_1()
