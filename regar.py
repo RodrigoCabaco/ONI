@@ -6,7 +6,7 @@ def part_1():
 	B = list(map(int, input().split(' ')))
 	for G in range(K):
 		for i in range(len(A)):
-				A[i] = A[i]+(G*B[i]) 
+			A[i] = A[i]+(G*B[i]) 
 	for p in A:
 		if A.index(p)!= len(A)-1:
 			print(p, end=" ")
